@@ -1,4 +1,4 @@
-# esbuild-plugin-css-layers
+# @soynoah/esbuild-plugin-cascade-layers
 
 An esbuild plugin that splits CSS cascade layers into separate files for optimized loading and better code organization.
 
@@ -13,18 +13,18 @@ An esbuild plugin that splits CSS cascade layers into separate files for optimiz
 ## Installation
 
 ```bash
-npm install esbuild-plugin-css-layers
+npm install @soynoah/esbuild-plugin-cascade-layers
 # or
-yarn add esbuild-plugin-css-layers
+yarn add @soynoah/esbuild-plugin-cascade-layers
 # or
-pnpm add esbuild-plugin-css-layers
+pnpm add @soynoah/esbuild-plugin-cascade-layers
 ```
 
 ## Quick Start
 
 ```typescript
 import { build } from "esbuild";
-import { cssLayersPlugin } from "esbuild-plugin-css-layers";
+import { cssLayersPlugin } from "@soynoah/esbuild-plugin-cascade-layers";
 
 await build({
   entryPoints: ["src/index.ts"],
@@ -293,7 +293,7 @@ Split your design system into logical layers:
 
 ```typescript
 import { vanillaExtractPlugin } from "@vanilla-extract/esbuild-plugin";
-import { cssLayersPlugin } from "esbuild-plugin-css-layers";
+import { cssLayersPlugin } from "@soynoah/esbuild-plugin-cascade-layers";
 
 await build({
   plugins: [
@@ -306,7 +306,7 @@ await build({
 ### With PostCSS
 
 ```typescript
-import { cssLayersPlugin } from "esbuild-plugin-css-layers";
+import { cssLayersPlugin } from "@soynoah/esbuild-plugin-cascade-layers";
 
 await build({
   plugins: [
