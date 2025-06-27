@@ -1,6 +1,6 @@
 {
   "name": "@soynoah/esbuild-plugin-cascade-layers",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "An esbuild plugin to split CSS cascade layers into separate files",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
